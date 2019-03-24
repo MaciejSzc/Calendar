@@ -6,5 +6,5 @@ import lombok.Data;
 public class LoginForm {
     private int id;
     private String login;
-    private String passowrd;
+    private String password;
 }
