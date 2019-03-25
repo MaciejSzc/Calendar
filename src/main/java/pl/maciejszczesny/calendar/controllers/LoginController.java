@@ -23,7 +23,7 @@ public class LoginController {
 
     @PostMapping("/login")
     public String login(@ModelAttribute LoginForm loginForm, Model model){
-
-        return "redirect:/calendar";
+model.addAttribute("text",loginService.login(loginForm));
+        return "login";
     }
 }

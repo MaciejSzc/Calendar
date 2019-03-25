@@ -14,4 +14,5 @@ public class LoginEntity {
     private @Id @GeneratedValue int id;
     private String login;
     private  String password;
+    private String email;
 }

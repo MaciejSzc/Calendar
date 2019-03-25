@@ -12,11 +12,12 @@
 <body>
 <div>
 <h1>Zaloguj się:</h1>
+    <h2 th:text="${text}"></h2>
 <form action="/login" method="post" th:object="${loginForm}">
     <p>Login</p>
     <input type="text" required th:field="*{login}">
     <p>Hasło</p>
-    <input type="password" required th:field="*{passowrd}">
+    <input type="password" required th:field="*{password}">
     <br/><br/>
     <input type="submit" value="Zaloguj">
 </form>
