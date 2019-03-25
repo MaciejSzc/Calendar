@@ -1,11 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
 <head>
     <meta charset="UTF-8">
     <title>Calendar</title>
+    <style>
+        div{
+            width: 50px;
+            height: 50px;
+        }
+    </style>
 </head>
 <body>
-<
+<th:block th:each="day : ${days}">
+
+    <div>
+
+    </div>
+
+
+
+</th:block>
+<form action="/calendar" method="post">
+    Zarezerwój dzień: <input type="text" name="day">
+    <input type="submit" value="Rezerwuj">
+</form>
 
 </body>
 </html>
